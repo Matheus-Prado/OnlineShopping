@@ -78,7 +78,9 @@
     <Compile Include="SignInSteps.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Cart.feature" />
     <None Include="packages.config" />
+    <None Include="QuickView.feature" />
     <None Include="SignIn.Feature" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

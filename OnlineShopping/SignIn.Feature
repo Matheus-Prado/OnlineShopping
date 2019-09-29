@@ -5,7 +5,7 @@
 
 @mytag
 Scenario: Sign in on the online store
-	Given I am not logged in on the home page 
+	Given I am on the homepage
 		And I click to Sign In
 	When I enter my email and password
 	|email|password|
@@ -14,13 +14,13 @@ Scenario: Sign in on the online store
 	Then My username should appear where the sign in button was
 
 Scenario: Sign in without email and password
-	Given I am not logged in on the home page 
+	Given I am on the homepage
 		And I click to Sign In
 	When I click Sign In
 	Then should appear the error message 'There is 1 error An email address required.'
 
 Scenario: Sign in with invalid password
-	Given I am not logged in on the home page 
+	Given I am on the homepage
 		And I click to Sign In
 	When I enter my email and password
 	|email|password|
